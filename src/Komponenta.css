@@ -8,6 +8,11 @@
     border-radius: 30px;
 }
 
+.dodatUKorpu {
+    border :1px solid #142041;
+    background-color: lightblue;
+}
+
 .proizvodParent:hover {
     border: 1px solid #142041;
 }

@@ -9,3 +9,23 @@
     border: 1px solid black;
     margin: 10px;
 }
+
+.idiNaKorpuDugme {
+    padding: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.pregledDodatih {
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+}
+
+.pregledDodatih div {
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #140241;
+    padding: 20px;
+}
