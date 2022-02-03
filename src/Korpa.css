@@ -58,3 +58,11 @@ img {
     text-align: center;
     display: block;
 }
+
+.dugmeZaPorucivanje {
+    display: block;
+    margin: 30px auto;
+    font-size: 20px;
+    padding: 20px;
+    font-weight: 700;
+}

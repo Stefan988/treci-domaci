@@ -14,7 +14,7 @@ function App() {
     <Router>
       <Switch>
         <Route exact path="/korpa">
-          <Korpa korpa={korpa} />
+          <Korpa korpa={korpa} setKorpa={setKorpa}/>
         </Route>
         <Route path="/">
           <IzborKomponenata dodajUKorpu={dodajUKorpu} korpa={korpa} setKorpa={setKorpa} />

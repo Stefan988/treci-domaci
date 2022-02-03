@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
 import ElementKorpe from "./ElementKorpe";
 import "./Korpa.css";
 
-function Korpa({ korpa }) {
+function Korpa({ korpa, setKorpa }) {
   const [rejting, setRejting] = useState(1000);
-
+  const history = useHistory();
   const generisiRandom = () => {
     return Math.floor(Math.random() * (10000 - 2000 + 1) + 2000);
   };
@@ -36,7 +37,18 @@ function Korpa({ korpa }) {
       />
 
       <div className="rejtingRacunara">Benchmark rejting ove konfiguraije je: {rejting} poena.</div>
-      <Link className="nazadDugme" to="/">Nazad na konfiguraije</Link>
+      <button
+        onClick={() => {
+          alert("Uspesno ste porucili!")
+          history.push("/");
+          setKorpa({});
+        }}
+        className="dugmeZaPorucivanje">
+        Zadovoljan sam komponentama, zelim da porucim
+      </button>
+      <Link className="nazadDugme" to="/">
+        Nazad na konfiguraije
+      </Link>
     </div>
   );
 }
