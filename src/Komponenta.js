@@ -27,7 +27,7 @@ function Komponenta({ proizvod, dodajUKorpu, grupa, korpa }) {
           dodajUKorpu(grupa, proizvod);
         }}
         className="dodajDugme">
-        Odaberi
+        {uKorpi ? "Odabran" : "Odaberi"}
       </button>
     </div>
   );
