@@ -1,0 +1,42 @@
+.proizvodParent {
+    border: 1px solid #cdcdcd;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    margin: 10px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.proizvodParent:hover {
+    border: 1px solid #142041;
+}
+
+.informacija {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3px 0;
+    margin: 3px 0;
+    border-bottom: 1px solid gray;
+}
+
+.informacija .labela {
+    color: gray;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.informacija .vrednost {
+    font-weight: bold;
+}
+
+.dodajDugme {
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.dodajDugme:hover {
+    border: 1px solid #142041;
+}

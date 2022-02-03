@@ -2,13 +2,20 @@ import React from "react";
 
 import spisakKomponenata from "./spisakKomponenata";
 import GrupaKomponenti from "./GrupaKomponenti";
+import './IzborKomponenata.css'
 
-function IzborKomponenata() {
+function IzborKomponenata({korpa}) {
   return (
-    <div>
-      {spisakKomponenata.map((kategorija) => (
-        <GrupaKomponenti kategorija={kategorija} />
-      ))}
+    <div className="izborKomponenti">
+      <div className="nasolov">Prodavnica racunareskse opreme</div>
+
+      <div className="grupeKomponenti">
+        {spisakKomponenata.map((kategorija) => (
+          <GrupaKomponenti kategorija={kategorija} />
+        ))}
+      </div>
+
+      <div>Spisak dodatih komponenata: {korpa}</div>
     </div>
   );
 }

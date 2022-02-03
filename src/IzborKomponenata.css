@@ -1,0 +1,11 @@
+.nasolov {
+    font-size: 36px;
+    font-weight: 800;
+    text-align: center;
+    margin: 20px;
+}
+
+.grupeKomponenti {
+    border: 1px solid black;
+    margin: 10px;
+}

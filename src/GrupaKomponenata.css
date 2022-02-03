@@ -1,0 +1,16 @@
+.spisakProizvodaUGrupi {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nazivGrupe {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 10px 30px;
+}
+
+.grupaKomponenti {
+    border-bottom: 1px solid black;
+    padding: 20px;
+    margin:  0 20px;
+}
